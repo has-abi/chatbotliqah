@@ -1,0 +1,45 @@
+Check Vaccin Location
+---
+tags:
+  - Conversation
+post:
+  summary: Check your vaccin location after providing credentials like CNIE, Name, Date of Birth and the Captcha code
+  parameters:
+    - name: body
+      description: Contain credentials like CNIE, Name, Date of Birth and the Captcha code
+      in: body
+      required: true
+      schema:
+        type: object
+        required:
+          - "message"
+        properties:
+          CNIE:
+            type: "text"
+            example: "JH25635"
+          NomAr:
+            type: "text"
+            example: "ابدا"
+          DateExpirationCNIE:
+            type: "text"
+            example: "30/02/2025"
+          txtJour:
+            type: "text"
+            example: "02"
+          txtMois:
+            type: "text"
+            example: "12"
+          txtAnnee:
+            type: "text"
+            example: "1998"
+          AC_Captcha:
+            type: "text"
+            example: "14859"
+  responses:
+    200:
+      description: When the credentials are corrects and the response is generated successfully
+get:
+  summary: Initiate the the page for scrapping the informations about the vaccin center and return a captcha image code 
+  responses:
+    200:
+      description: When the page is setup and the screenshoot for the captcha code is returned

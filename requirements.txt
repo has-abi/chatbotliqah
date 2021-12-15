@@ -1,0 +1,11 @@
+Flask
+tensorflow-cpu
+numpy
+gunicorn
+sklearn
+selenium
+pillow
+http_constants
+flask_jwt_extended
+validators
+flasgger

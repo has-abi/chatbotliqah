@@ -1,0 +1,20 @@
+Chat
+---
+tags:
+  - Conversation
+parameters:
+  - name: body
+    description: send and receive messages from the user it's the main endpoint
+    in: body
+    required: true
+    schema:
+      type: object
+      required:
+        - "message"
+      properties:
+        message:
+          type: "message"
+          example: "salam ..."
+responses:
+  200:
+    description: When the response is generated successfully
