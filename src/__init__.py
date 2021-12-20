@@ -20,7 +20,7 @@ def create_app(test_config=None):
             JWT_SECRET_KEY=os.environ.get("JWT_SECRET_KEY"),
             SQLALCHEMY_TRACK_MODIFICATIONS=False,
             SWAGGER={
-                'title': "Bookmarks API",
+                'title': "Chatbot liqah API",
                 'uiversion': 3
             }
         )
